@@ -1,0 +1,222 @@
+/* Global Reset */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+}
+
+/* Page Container */
+.page-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem 1rem;
+  background: #fff;
+  min-height: 100vh;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+
+/* Navigation Bar */
+nav {
+  background: #007bff;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+nav button {
+  background: #fff;
+  color: #007bff;
+  border: 1px solid #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav button:hover {
+  background: #e6f2ff;
+  border-color: #007bff;
+}
+
+/* Form Cards */
+.form-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  padding: 1.5rem;
+  background: #f9fcff;
+  border: 1px solid #d9e6f2;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.form-card label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.form-card input,
+.form-card select,
+.form-card textarea {
+  padding: 0.7rem;
+  border: 1px solid #ccd9e1;
+  border-radius: 6px;
+  background-color: #fff;
+  margin-top: 0.3rem;
+  font-size: 1rem;
+}
+
+.form-card button {
+  grid-column: span 2;
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 0.9rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-card button:hover {
+  background: #0056b3;
+}
+
+/* Standalone Login Card (Centered & Compact) */
+.login-card {
+  background: #ffffff;
+  padding: 2rem;
+  max-width: 400px;
+  margin: 4rem auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Cards */
+.incident-card,
+.patient-card {
+  background: #f4f9ff;
+  border-left: 4px solid #007bff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0.3rem 0;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button.edit {
+  background: #ffc107;
+  color: #000;
+}
+
+button.delete {
+  background: #dc3545;
+  color: #fff;
+}
+
+/* Dashboard */
+.dashboard-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  flex: 1;
+  min-width: 220px;
+  background: #007bff;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 6px;
+  text-align: center;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Calendar */
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+  margin-bottom: 1rem;
+}
+
+.calendar-day {
+  background: #eaf2ff;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 6px;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.2s;
+}
+
+.calendar-day:hover {
+  background: #dbe9ff;
+}
+
+.calendar-day.has-data::after {
+  content: '';
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  width: 8px;
+  height: 8px;
+  background: #1e90ff;
+  border-radius: 50%;
+}
+
+.empty-day {
+  visibility: hidden;
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+  .form-card {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-cards {
+    flex-direction: column;
+  }
+
+  nav {
+    justify-content: center;
+  }
+
+  .login-card {
+    margin: 2rem 1rem;
+  }
+}
