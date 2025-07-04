@@ -37,11 +37,11 @@ When Admin adds a new patient:
 - Format for Password: `firstname` + `birth year`
 
 #### Example:
-Patient Name: Tejas rajput
-DOB: 2002-06-21
-Email: tejas@gmail.com
-password generated is : tejas2002  
-the email and password toggle when admin adds the patient
+- Patient Name: Tejas rajput
+- DOB: 2002-06-21
+- Email: tejas@gmail.com
+- password generated is : tejas2002  
+- the email and password toggle when admin adds the patient
 
 Patient login gets saved to localStorage, and login details are shown in an alert after adding.
 
@@ -74,7 +74,7 @@ Patient login gets saved to localStorage, and login details are shown in an aler
 
 ## 📁 Folder Structure
 
-<pre> ``` src/ ├── components/ │ └── Navigation.js ├── contexts/ │ ├── AuthContext.js │ └── DataContext.js ├── pages/ │ ├── Dashboard.js │ ├── LoginPage.js │ ├── PatientsPage.js │ ├── IncidentsPage.js │ ├── CalendarPage.js │ └── PatientDashboard.js ├── styles/ │ └── global.css ├── App.js └── index.js ``` </pre>
+ ``` src/ ├── components/ │ └── Navigation.js ├── contexts/ │ ├── AuthContext.js │ └── DataContext.js ├── pages/ │ ├── Dashboard.js │ ├── LoginPage.js │ ├── PatientsPage.js │ ├── IncidentsPage.js │ ├── CalendarPage.js │ └── PatientDashboard.js ├── styles/ │ └── global.css ├── App.js └── index.js ``` 
 
 
 
