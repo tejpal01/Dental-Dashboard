@@ -74,23 +74,7 @@ Patient login gets saved to localStorage, and login details are shown in an aler
 
 ## 📁 Folder Structure
 
-src/
-├── components/
-│ └── Navigation.js
-├── contexts/
-│ ├── AuthContext.js
-│ └── DataContext.js
-├── pages/
-│ ├── Dashboard.js
-│ ├── LoginPage.js
-│ ├── PatientsPage.js
-│ ├── IncidentsPage.js
-│ ├── CalendarPage.js
-│ └── PatientDashboard.js
-├── styles/
-│ └── global.css
-├── App.js
-└── index.js
+<pre> ``` src/ ├── components/ │ └── Navigation.js ├── contexts/ │ ├── AuthContext.js │ └── DataContext.js ├── pages/ │ ├── Dashboard.js │ ├── LoginPage.js │ ├── PatientsPage.js │ ├── IncidentsPage.js │ ├── CalendarPage.js │ └── PatientDashboard.js ├── styles/ │ └── global.css ├── App.js └── index.js ``` </pre>
 
 
 
